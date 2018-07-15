@@ -1,0 +1,181 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pritamwebapp-AWS",
+		"_postman_id": "2781c413-dfed-2c17-7ae0-d8811e96b8bd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/WorldApp/restdb",
+			"request": {
+				"url": "http://pritamwebapp-env.g8ymu9jwgy.ap-south-1.elasticbeanstalk.com/restdb",
+				"method": "POST",
+				"header": [
+					{
+						"key": "dbtable",
+						"value": "user",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"last_name\": \"lname111\",\n        \"id\": \"31\",\n        \"first_name\": \"fname\",\n        \"email\": \"email@gmail.com\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/WorldApp/restdb",
+			"request": {
+				"url": "http://pritamwebapp-env.g8ymu9jwgy.ap-south-1.elasticbeanstalk.com/restdb",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "dbtable",
+						"value": "user",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"last_name\": \"lname13uftgvigv1\",\n        \"id\": \"3\",\n        \"first_name\": \"fname68\",\n        \"email\": \"email@ysgdshjrd.com\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/WorldApp/restdb",
+			"request": {
+				"url": {
+					"raw": "http://pritamwebapp-env.g8ymu9jwgy.ap-south-1.elasticbeanstalk.com/restdb?id=2",
+					"protocol": "http",
+					"host": [
+						"pritamwebapp-env",
+						"g8ymu9jwgy",
+						"ap-south-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"restdb"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "dbtable",
+						"value": "user",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/WorldApp/restdb?id=5",
+			"request": {
+				"url": {
+					"raw": "http://pritamwebapp-env.g8ymu9jwgy.ap-south-1.elasticbeanstalk.com/restdb?id=5",
+					"protocol": "http",
+					"host": [
+						"pritamwebapp-env",
+						"g8ymu9jwgy",
+						"ap-south-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"restdb"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "dbtable",
+						"value": "user",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/WorldApp/restdb",
+			"request": {
+				"url": "http://pritamwebapp-env.g8ymu9jwgy.ap-south-1.elasticbeanstalk.com/restdb",
+				"method": "GET",
+				"header": [
+					{
+						"key": "dbtable",
+						"value": "user",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/WorldApp/restdb-batch",
+			"request": {
+				"url": "http://pritamwebapp-env.g8ymu9jwgy.ap-south-1.elasticbeanstalk.com/restdb",
+				"method": "POST",
+				"header": [
+					{
+						"key": "dbtable",
+						"value": "user",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"last_name\": \"lname111\",\n        \"id\": \"1\",\n        \"first_name\": \"fname\",\n        \"email\": \"email@gmail.com\"\n    },\n    {\n        \"last_name\": \"fhfdjfd\",\n        \"id\": \"3\",\n        \"first_name\": \"hdsfjfjfd\",\n        \"email\": \"email@gmail.com\"\n    }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
